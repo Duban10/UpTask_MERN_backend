@@ -7,12 +7,12 @@ export const emailRegistro = async (datos) => {
     const { email, nombre, token } = datos;
 
     const transport = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: process.env.EMAIL_PORT,
+      host: 'smtpout.secureserver.net',
+      port: 587,
       secure:false,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
+        user: 'luisverjel@wposs.com',
+        pass: '7KykvR#_+J'
       },
       tls:{
           rejectUnauthorized: false
@@ -41,12 +41,12 @@ export const emailOlvidePassword = async (datos) => {
     const { email, nombre, token } = datos;
 
     const transport = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: process.env.EMAIL_PORT,
+      host: 'smtpout.secureserver.net',
+      port: 587,
       secure:false,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
+        user: 'luisverjel@wposs.com',
+        pass: '7KykvR#_+J'
       },
       tls:{
           rejectUnauthorized: false
